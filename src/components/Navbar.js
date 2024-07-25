@@ -1,7 +1,7 @@
 import React from 'react'
 import { Nav, Container, Form, Navbar } from "react-bootstrap";
 import PropTypes from 'prop-types'
-import {Link} from 'react-router-dom'
+
 
 
 
@@ -10,12 +10,12 @@ export default function Navb(props) {
   return (
     <Navbar expand="lg" className=" justify-content-between navbar" sticky="top" bg={props.Mode} data-bs-theme={props.Mode}>
       <Container className='NavBarStyle'>
-        <Navbar.Brand as={Link} to="/" >{props.title}</Navbar.Brand>
+        <Navbar.Brand  href="#" >{props.title}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={Link} className="li" to="/">{props.Home}</Nav.Link>
-            <Nav.Link  as={Link} className="li" to="/About">{props.About}</Nav.Link>
+            <Nav.Link  className="li" href="#">{props.Home}</Nav.Link>
+           
 
           </Nav>
           <div className='vw-10'>

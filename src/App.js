@@ -6,7 +6,7 @@ import About from './components/About';
 import { useState } from 'react';
 import AlertDismissible from './components/Alert1';
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 
 // import About from './components/About';
@@ -65,16 +65,15 @@ function App() {
   }
   return (
     <>
-<Router>
+
         <Navb title="Textutils" About="About Me" Mode={mode} Home="Home" ToggleMode={toggleMode} count={count} darkcolor={color} />
         <AlertDismissible Alert={alert} />
         <div className="container my-3">
-          <Routes>
-            <Route exact path="/" element={<TextForm Heading="Enter the text below" Mode={mode} showAlert={showAlert} color={color} />} />
-            <Route exact path="/About" element={<About Mode={mode}/>} />
-          </Routes>
+        
+            <TextForm Heading="Enter the text below" Mode={mode} showAlert={showAlert} color={color} />
+            
         </div>
-      </Router>
+      
     </>
   );
 }
