@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navb from './components/Navbar';
 import TextForm from './components/TextForm';
-import About from './components/About';
+
 import { useState } from 'react';
 import AlertDismissible from './components/Alert1';
 import React from 'react';
